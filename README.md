@@ -1,15 +1,36 @@
 ﻿<div align="center">
 
-## Form Based File Upload Using Pure ASP<br/>by Karl P. Grear
+## Form Based File Upload Using Pure ASP
+
 
 </div>
 
 ### Description
 
 <b>This code will allow you to do form based file uploads</b>. It supports multiple files and uses only pure ASP. It will parse form data, browse server folders for a save location, and log uploads or failed uploads into a database There are no components to install so it will work on any web server that supports ASP. Just paste this code into a text file and name it saveany.asp. I have tested it on IIS 4 and 5, with IE 4, IE 5 and Netscape 6. With this code you will be able to save a file in any directory that the anonymous account assigned to it (usually IUSER_machinename) has access to so be careful. I should note that the server needs ADO, ADOX and the File System Object installed on it.
+ 
+### More Info
+ 
+
+
+<span>             |<span>
+---                |---
+**Submitted On**   |
+**By**             |[Karl P\. Grear](https://github.com/Planet-Source-Code/PSCIndex/blob/master/ByAuthor/karl-p-grear.md)
+**Level**          |Advanced
+**User Rating**    |5.0 (453 globes from 91 users)
+**Compatibility**  |ASP \(Active Server Pages\)
+**Category**       |[Files](https://github.com/Planet-Source-Code/PSCIndex/blob/master/ByCategory/files__4-2.md)
+**World**          |[ASP / VbScript](https://github.com/Planet-Source-Code/PSCIndex/blob/master/ByWorld/asp-vbscript.md)
+**Archive File**   |[](https://github.com/Planet-Source-Code/karl-p-grear-form-based-file-upload-using-pure-asp__4-6569/archive/master.zip)
+
+
+
+
 
 ### Source Code
 
+```
 <%response.buffer=false
   Func = Request("Func")
   if isempty(Func) Then
@@ -317,4 +338,5 @@
 			set cat = nothing
   	end function
   </SCRIPT>
+```
 
